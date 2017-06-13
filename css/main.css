@@ -1,0 +1,12 @@
+.barraNavegacion{
+	height: 25vh;
+}
+img.card-image.responsive-img{
+	width: 50vh;
+	height: 35vh;
+	margin-left: : 10vh;
+	margin-top: 10vh;
+}
+.pokemon{
+	height: 70vh;
+}
