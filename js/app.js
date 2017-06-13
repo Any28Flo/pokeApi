@@ -56,17 +56,21 @@ var muestraPokemones = function(listaPokemones){
 		console.log(arregloImagenes[posicion]);
 		var $foto = $("<img/>");
 		var $boton = $("<a>Ver poquemon </a>");
+		var $nombre = $("<p>"+pokemon.name+"</p>");
+		$nombre.addClass("card-content");
 		$foto.attr("src",ruta);
 		var $itemPokemon = $("<li/>");
 		$itemPokemon.addClass("pokemon card col s10 l4");
 		$boton.addClass("card-action");
 		$foto.addClass("card-image responsive-img");
-		$itemPokemon.text(pokemon.name);
+		$itemPokemon.text();
 		$itemPokemon.attr("data-url",pokemon.url);
 
 		$lista.append($itemPokemon);
 		$itemPokemon.append($foto);
+		$itemPokemon.append($nombre);
 		$itemPokemon.append($boton);
+
 
 	})
 }
